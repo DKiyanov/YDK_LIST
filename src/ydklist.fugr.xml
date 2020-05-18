@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Listing wrapper with callback interface</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LYDKLISTTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLYDKLIST</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>YDK_LIST</FUNCNAME>
+     <SHORT_TEXT>Make ABAP list from callback routines</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>CALLBACK_PROGRAM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SY-REPID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>CALLBACK_FORM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>COL</PARAMETER>
+       <DEFAULT>5</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ROW</PARAMETER>
+       <DEFAULT>5</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>WIDTH</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>HEIGHT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+     </IMPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>CANCEL</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>CALLBACK_PROGRAM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Program fro Callback</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CALLBACK_FORM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Subroutine for Callback</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>COL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Column</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ROW</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Row</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WIDTH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Width</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>HEIGHT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Height</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CANCEL</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Cancel</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>YDK_LIST_EX</FUNCNAME>
+     <SHORT_TEXT>Make ABAP list from callback routines</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>CALLBACK_PROGRAM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SY-REPID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>CALLBACK_FORM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>COL</PARAMETER>
+       <DEFAULT>5</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ROW</PARAMETER>
+       <DEFAULT>5</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>WIDTH</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>HEIGHT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>VAR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>TAB</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSCHA>
+     </CHANGING>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>CANCEL</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>CALLBACK_PROGRAM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Program for Callback</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CALLBACK_FORM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Subroutine for Callback</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>COL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Column</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ROW</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Row</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WIDTH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Width</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>HEIGHT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Height</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>VAR</PARAMETER>
+       <KIND>P</KIND>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TAB</PARAMETER>
+       <KIND>P</KIND>
+       <INDEX> 008</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CANCEL</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Cancel</STEXT>
+       <INDEX> 009</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>YDK_LIST_FOR_CLASS</FUNCNAME>
+     <SHORT_TEXT>Make ABAP list from callback class-method</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>CLASSNAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CLIKE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>METHOD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CLIKE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>COL</PARAMETER>
+       <DEFAULT>5</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ROW</PARAMETER>
+       <DEFAULT>5</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>WIDTH</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>HEIGHT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PARAMS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>YDK_LIST=&gt;TY_PARAM_TAB</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>CANCEL</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>CLASSNAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Class name</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>METHOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>CallBack method</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>COL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Column</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ROW</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Row</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WIDTH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Width</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>HEIGHT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Height</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PARAMS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Output parameters</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CANCEL</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Cancel</STEXT>
+       <INDEX> 008</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>YDK_LIST_FOR_FORM</FUNCNAME>
+     <SHORT_TEXT>Make ABAP list from callback routines</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>CALLBACK_PROGRAM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CLIKE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>CALLBACK_FORM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CLIKE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>COL</PARAMETER>
+       <DEFAULT>5</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ROW</PARAMETER>
+       <DEFAULT>5</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>WIDTH</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>HEIGHT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PARAMS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>YDK_LIST=&gt;TY_PARAM_TAB</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>CANCEL</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>CALLBACK_PROGRAM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Program for Callback</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CALLBACK_FORM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Subroutine for Callback</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>COL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Column</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ROW</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Row</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WIDTH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Width</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>HEIGHT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Height</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PARAMS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Output parameters</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CANCEL</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Cancel</STEXT>
+       <INDEX> 008</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>YDK_LIST_FOR_INSTANCE</FUNCNAME>
+     <SHORT_TEXT>Make ABAP list from callback class instance method</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>INSTANCE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>REF TO OBJECT</TYP>
+       <REF_CLASS>X</REF_CLASS>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>METHOD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CLIKE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>COL</PARAMETER>
+       <DEFAULT>5</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ROW</PARAMETER>
+       <DEFAULT>5</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>WIDTH</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>HEIGHT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PARAMS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>YDK_LIST=&gt;TY_PARAM_TAB</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>CANCEL</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>INSTANCE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Instance</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>METHOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>CallBack method</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>COL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Column</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ROW</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Row</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WIDTH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Width</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>HEIGHT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Height</STEXT>
+       <INDEX> 006</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PARAMS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Output parameters</STEXT>
+       <INDEX> 007</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CANCEL</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Cancel</STEXT>
+       <INDEX> 008</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <DYNPROS>
+    <item>
+     <HEADER>
+      <PROGRAM>SAPLYDKLIST</PROGRAM>
+      <SCREEN>0100</SCREEN>
+      <LANGUAGE>E</LANGUAGE>
+      <DESCRIPT>SEL_SCREEN 1001 INFO:170000160000000000000000000006969767987</DESCRIPT>
+      <TYPE>N</TYPE>
+      <NEXTSCREEN>0100</NEXTSCREEN>
+      <LINES>021</LINES>
+      <COLUMNS>083</COLUMNS>
+     </HEADER>
+     <CONTAINERS>
+      <RPY_DYCATT>
+       <TYPE>SCREEN</TYPE>
+       <NAME>SCREEN</NAME>
+      </RPY_DYCATT>
+     </CONTAINERS>
+     <FIELDS>
+      <RPY_DYFATC>
+       <CONT_TYPE>SCREEN</CONT_TYPE>
+       <CONT_NAME>SCREEN</CONT_NAME>
+       <TYPE>OKCODE</TYPE>
+       <TEXT>____________________</TEXT>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
+       <HEIGHT>001</HEIGHT>
+       <FORMAT>CHAR</FORMAT>
+       <INPUT_FLD>X</INPUT_FLD>
+      </RPY_DYFATC>
+     </FIELDS>
+     <FLOW_LOGIC>
+      <RPY_DYFLOW>
+       <LINE>PROCESS BEFORE OUTPUT.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>MODULE LIST.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW/>
+      <RPY_DYFLOW>
+       <LINE>PROCESS AFTER INPUT.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>*  MODULE USER_COMMAND_0100.</LINE>
+      </RPY_DYFLOW>
+     </FLOW_LOGIC>
+     <SPACES>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+    <item>
+     <HEADER>
+      <PROGRAM>SAPLYDKLIST</PROGRAM>
+      <SCREEN>0110</SCREEN>
+      <LANGUAGE>E</LANGUAGE>
+      <DESCRIPT>SEL_SCREEN 1001 INFO:170000160000000000000000000006969767987</DESCRIPT>
+      <TYPE>M</TYPE>
+      <NEXTSCREEN>0110</NEXTSCREEN>
+      <LINES>021</LINES>
+      <COLUMNS>083</COLUMNS>
+     </HEADER>
+     <CONTAINERS>
+      <RPY_DYCATT>
+       <TYPE>SCREEN</TYPE>
+       <NAME>SCREEN</NAME>
+      </RPY_DYCATT>
+     </CONTAINERS>
+     <FIELDS>
+      <RPY_DYFATC>
+       <CONT_TYPE>SCREEN</CONT_TYPE>
+       <CONT_NAME>SCREEN</CONT_NAME>
+       <TYPE>OKCODE</TYPE>
+       <TEXT>____________________</TEXT>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
+       <HEIGHT>001</HEIGHT>
+       <FORMAT>CHAR</FORMAT>
+       <INPUT_FLD>X</INPUT_FLD>
+      </RPY_DYFATC>
+     </FIELDS>
+     <FLOW_LOGIC>
+      <RPY_DYFLOW>
+       <LINE>PROCESS BEFORE OUTPUT.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>MODULE LIST.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW/>
+      <RPY_DYFLOW>
+       <LINE>PROCESS AFTER INPUT.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW>
+       <LINE>*  MODULE USER_COMMAND_0100.</LINE>
+      </RPY_DYFLOW>
+     </FLOW_LOGIC>
+     <SPACES>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </DYNPROS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

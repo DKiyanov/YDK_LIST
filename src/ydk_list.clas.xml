@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>YDK_LIST</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Listing output</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>EV_LINE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>At Line-Selection</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>EV_LINE</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>At Line-Selection</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>EV_LIST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>List rendering (Write ...)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>EV_LIST</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Отрисовка списка (Write...)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>EV_START</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Runs once upon call or after RCM_RESTAR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>EV_START</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Выполняется один раз при вызове или</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>EV_TOP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Top-Of-Page</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>EV_TOP</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Top-Of-Page</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>EV_TOPD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Top-Of-Page DURING LINE-SELECTION</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>EV_TOPD</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Top-Of-Page DURING LINE-SELECTION</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>FOR_CLASS_METHOD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>for static class method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>FOR_CLASS_METHOD</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>for static class method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>FOR_FORM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>for form</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>FOR_FORM</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>for form</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>FOR_INSTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>for instance method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>FOR_INSTANCE</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>for instance method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>RCM_CANC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Cancel - exit from modal state</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>RCM_CANC</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Отмена - выход из модального сост.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>RCM_NEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Drawing a new list</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>RCM_NEW</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Отрисовка нового списка</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>RCM_OKAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Complete - exit from modal state</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>RCM_OKAY</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Выполн. - выход из модального сост.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>RCM_REFRESH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Redraw the list with the retaining position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>RCM_REFRESH</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Повт. отрисовка списка с сохр. поз.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>RCM_RENEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>List redraw</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>RCM_RENEW</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Повторная отрисовка списка</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>RCM_RESTART</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Repeat events START and NEW</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>RCM_RESTART</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Повтор события START и NEW</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>TY_LIST_EVENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Listing / Processing Event</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>TY_LIST_EVENT</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Событие формирования/обработки листинга</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>TY_RET_COMMAND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>returning command</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YDK_LIST</CLSNAME>
+     <CMPNAME>TY_RET_COMMAND</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>возвращаемая команда</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
