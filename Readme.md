@@ -56,5 +56,5 @@ ENDFORM.
 
 All variants to start listing output are shown in the program [YDK_LIST_DEMO](src/ydk_list_demo.prog.abap)
 
-Here is a small demo showing the possibilities of this outdated technology:
+Here is a small demo showing the possibilities of this outdated technology:  
 ![demo](demo.gif)
