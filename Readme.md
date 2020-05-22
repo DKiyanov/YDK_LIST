@@ -4,6 +4,8 @@ However, the use of this technology is appropriate in some cases, for example wh
 This package allows you to output modal and non-modal ABAP listings. 
 It allows to implement any functionality that is possible in ABAP listing technology.
 
+To install this on SAP server, use [abapGit](https://docs.abapgit.org/)
+
 Here is a program that displays a dialog box with "Hello World":
 ```ABAP
 CLASS lcl_test DEFINITION.
